@@ -1,0 +1,59 @@
+<mat-drawer-container>
+    <mat-drawer mode="side" [opened]="sideBaropen">
+      <app-sidebar></app-sidebar> <!--Drawer Content Sidenav-->
+    </mat-drawer>
+  
+  <mat-drawer-content>
+    <app-navbarafterlogin (toggleSidebarbutton)="sidebartoggler()"></app-navbarafterlogin>
+    <!--provide responsive fixed width of page-->
+    <div class="categories">
+      <a class="category-card" href="#">
+        <div class="image-wrapper">
+         <img src="../../../assets/design.jpg" style="width: 310px;height: 200px;">
+        </div>
+        <div class="title">DESIGN</div>
+      </a>
+ 
+      <a class="category-card2" href="#">
+       <div class="image-wrapper">
+         <img src="../../../assets/marketing.jpg" style="width: 310px;height: 200px;">
+       </div>
+       <div class="title">MARKETING</div>
+     </a>
+ 
+     <a class="category-card3" href="#">
+       <div class="image-wrapper">
+         <img src="../../../assets/business.jpg" style="width: 310px;height: 200px;">
+       </div>
+       <div class="title">BUSINESS</div>
+     </a>
+ 
+     <a class="category-card4" href="#">
+       <div class="image-wrapper">
+         <img src="../../../assets/ITSoftware.jpg" style="width: 310px;height: 200px;">
+       </div>
+       <div class="title">IT & SOFTWARE</div>
+     </a>
+ 
+     <a class="category-card5" href="#">
+       <div class="image-wrapper">
+         <a routerLink="/musiccourse"><img src="../../../assets/music.jpg" style="width: 310px;height: 200px;"></a>
+       </div>
+       <div class="title">MUSIC</div>
+     </a>
+     
+     <a class="category-card5" href="#">
+       <div class="image-wrapper">
+         <img src="../../../assets/development.jpg" style="width: 310px;height: 200px;">
+       </div>
+       <div class="title">DEVELOPMENT</div>
+     </a>
+     
+     <br>
+               
+     </div>
+ 
+  </mat-drawer-content>
+  
+  </mat-drawer-container>
+  

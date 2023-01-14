@@ -1,0 +1,27 @@
+<mat-drawer-container>
+    <mat-drawer mode="side" [opened]="sideBaropen">
+     <app-adminsidebar></app-adminsidebar> <!--Drawer Content Sidenav-->
+    </mat-drawer>
+  
+  <mat-drawer-content>
+    <app-navbarlogout (toggleSidebarbutton)="sidebartoggler()"></app-navbarlogout>
+    <!--provide responsive fixed width of page-->
+   <div class="adminhome">
+    <div class="contenthome">
+      <div class="row">
+        <div class="col-1">
+          <div class="color-box">
+            <img src="../../../assets/adminpick.jpg" class="controller">
+          </div>
+        </div>
+
+        <div class="col-2">
+            <h6>Welcome<br> Admin</h6>
+            </div>
+      </div>
+    </div>
+   </div>
+ 
+  </mat-drawer-content>
+  
+  </mat-drawer-container>

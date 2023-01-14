@@ -1,0 +1,49 @@
+<app-navbar></app-navbar>
+<div [ngClass]="isDarkTheme? 'dark-theme' : 'light-theme'">
+    <div class="maincontent">
+      <mat-card>
+        <mat-card-content>
+          <!-- <mat-slide-toggle (click)="toggleTheme()">Dark</mat-slide-toggle> -->
+    
+          <div class="contenthome">
+            <div class="row">
+              <div class="col-1">
+                <div class="color-box">
+                  <img src="../../../assets/studyimage.jpg" class="controller">
+                </div>
+              </div>
+      
+              <div class="col-2">
+                  <h6>WELCOME TO TOPPER</h6>
+                  <h5>Choose from over 100,000 online video courses with new additions published every month</h5>
+                  <br>
+                  <!-- <button class="btn btn-warning btn1">GET STARTED</button><button class="btn btn-warning">VIEW COURSE</button> -->
+                  <button type="button" routerLink="/home">GET STARTED<i class="fa fa-arrow-right" style="font-size: 25px; align-items: center;"></i></button>&nbsp;&nbsp;&nbsp;
+                  </div>
+            </div>
+          </div>
+    
+          <div class="contentfooter">
+            <div class="row">
+              <div class="col-md-4">
+                <h2><i class="fa fa-laptop" style="font-size: 25px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>100,000 Online Courses</span></h2> 
+                 <h3>Focus is having the unwavering <br>attention.</h3>
+              </div>
+              <div class="col-md-4">
+                <h2 class="secondrow"><i class="fa fa-users" style="font-size: 25px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Lifetime Entrance</span></h2> 
+                 <h3>New skills online the best way is to <br>develop and follow.</h3>
+              </div>
+              <div class="col-md-4">
+                <h2 class="thirdrow"><i class="fa fa-book" style="font-size: 25px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span>Live Learning</span></h2> 
+                 <h3>Start with your goals in mind and then <br>work.</h3>
+              </div>
+            </div>
+          </div>
+         
+         
+        </mat-card-content>
+      </mat-card>
+      
+    </div>
+    
+    </div>

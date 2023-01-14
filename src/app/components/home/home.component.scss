@@ -1,0 +1,546 @@
+mat-drawer{
+    width:230px;
+    background-color:#0f172a;
+}
+
+mat-drawer-container{
+    height:100%;
+}
+
+.mid{
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: initial;
+}
+
+.mid video{
+    width: 100%;
+    height: 100%;
+    pointer-events: none;/*to not clickable thing*/
+    object-fit: cover; /* to specify how video size should be resized to fit its container*/
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);/*define horizontal and verticle direction of element*/
+}
+
+.heading{
+    position: relative;
+    margin-left: 1%;
+    margin-top: 5%;
+}
+
+.heading h6{
+    margin-left: 65%;
+    margin-top: 3%;
+    font-size: 38px;
+    font-family: Garamond;
+    color: white;
+}
+
+.heading h5{
+ margin-left: 64%;
+ margin-top: 4%;
+ font-size: 32px;
+ font-family: Garamond;
+ color: white;
+}
+
+.exams{
+    background-color: rgb(236, 232, 226);
+}
+
+.exams mat-card{
+    width:100%;
+    height: 100%;
+
+}
+
+.exams mat-card-title{
+    font-size: 35px;
+    font-family: Garamond;
+    letter-spacing: 4px;
+}
+
+.exams mat-card-subtitle{
+    font-family: Garamond;
+    font-size: 17px;
+}
+
+.exams a:hover{
+   background-color: blanchedalmond;
+}
+ 
+   
+
+.heading h1{
+    font-family: Garamond;
+    font-size: 260%;
+    margin-top :10px ;
+    margin-left: 20px;
+    font-weight: bold;
+    align-items: center;
+    color: rgb(15, 226, 156);
+   }
+   
+   .heading p{
+    font-size: x-large;
+    font-family: Garamond;
+    margin-left: 170px;
+    color:white;
+    margin-top: 10px;
+   }
+
+   .heading{
+       position: relative;
+       margin-left: 1%;
+       margin-top: 5%;
+   }
+   .mid{
+       width:100%;
+       height: 100vh;
+       overflow: hidden;
+       display: flex;
+       flex-direction: column;
+       text-align: left;
+       align-items: initial;
+   }
+
+   .mid video{
+       width: 100%;
+       height: 100%;
+       pointer-events: none;/*to not clickable thing*/
+       object-fit: cover; /* to specify how video size should be resized to fit its container*/
+       position: absolute;
+       top:50%;
+       left:50%;
+       transform: translate(-50%,-50%);/*define horizontal and verticle direction of element*/
+   }
+
+   button{
+       margin-top: 3%;
+       margin-left: 3%;
+       font-family: Garamond;
+       height: 10%;
+   }
+
+   .btn1{
+    margin-top: 3%;
+    margin-left: 70%;
+    font-family: Garamond;
+   }
+   
+   .heading h6{
+       margin-left: 63%;
+       margin-top: 10%;
+       font-size: 50px;
+       font-family: Garamond;
+       color: white;
+   }
+
+   .heading h5{
+    margin-left: 67%;
+    margin-top: 4%;
+    font-size: 32px;
+    font-family: Garamond;
+    color: white;
+   }
+   a{
+    text-decoration: none;
+   }
+
+
+   .aboutuspage{
+    background: linear-gradient(319deg, #cdedfd 0%, #ffec82 37%, #ffcfd2 100%);
+    margin: 0px;
+    margin-top: 17px;
+    padding: 0px;
+    margin-bottom: 20px;
+    height: 80%;
+   }
+.about h6{
+    font-size: 30px;
+    font-family:"Garamond";
+    margin-left: 30%;
+    margin-top: 16%;
+    font-weight: bold;
+    color:black
+}
+
+.about p{
+    font-family: Garamond;
+    font-size: 19px;
+    margin-left: 45px;
+    margin-right: 35px;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+
+.about h4{
+   
+        font-size: 24px;
+        font-family: Garamond;
+        margin-left: 20%;
+        color: black;
+        font-weight: bold;
+    
+    
+}
+
+.about h5{
+    font-size: 16px;
+    font-family: Garamond;
+    margin-left: 30%;
+    color: black;
+    
+}
+
+.servicepage{
+
+   margin-bottom: 40px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+ }
+ h2{
+   margin-bottom: 15px;
+   margin-left: 45%;
+   font-family: Garamond;
+   font-size: 30px;
+   margin-top: 0;
+ }
+ 
+ .section-padding{
+   padding: 10px 0;
+ }
+ 
+ .single-service{
+   transition: .5s;
+   text-align: center;
+   height: 350px;
+   padding: 155px 30px;
+ }
+ 
+ .row{
+   margin: 20px;
+ }
+ 
+ .single-service .icon{
+ background-color: #fff;
+ border-radius: 50%;
+ box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+ color: #000;
+ display: inline-block;
+ height: 90px;
+ width: 90px;
+ margin-bottom: 35px;
+ }
+ 
+ .single-service .icon i{
+  
+   font-size: 32px;
+   line-height: 90px;
+ }
+ 
+ .single-service .content h3{
+   font-size: 20px;
+   font-weight: 300;
+   line-height: 35px;
+   margin: 0;
+   font-family: Garamond;
+   text-transform: uppercase;
+ }
+ 
+ .single-service .content p{
+   color: #fff;
+   line-height: 29px;
+   margin: 27px 0 0;
+   font-family: Garamond;
+   font-size: 19px;
+ }
+ 
+ .single-service:hover{
+    background-color: #e79087;
+background-image: linear-gradient(315deg, #e79087 0%, #fcd181 74%);
+ padding: 20px 50px;
+   border-radius: 25px;
+ }
+ 
+ .single-service:hover .content{
+   height: 140px;
+ 
+ }
+
+.category{
+    background: linear-gradient(319deg, #cdedfd 0%, #ffec82 37%, #ffcfd2 100%);
+    width:100%;   
+}
+
+.category .row{
+    margin-left: 198px;
+    margin-top: 10px;
+}
+.category h6{
+    align-items: center;
+    font-size: 40px;
+    margin-left: 31%;
+    font-family: Garamond;
+    
+}
+
+.text .col{
+    font-size: 25px;
+    font-family: Garamond;
+    font-weight: Bold;
+}
+
+.text .col a{
+    font-size: 18px;
+}
+
+.text .col span{
+    font-size: 15px;
+}
+
+.learningpage h6{
+    font-size: 35px;
+    font-family:"Garamond";
+    margin-left: 30%;
+    margin-top: 16%;
+    font-weight: bold;
+    color:black;
+    line-height: 35px;
+}
+
+.learningpage p{
+    font-family: Garamond;
+    font-size: 19px;
+    margin-left: 176px;
+    margin-right: 35px;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+
+
+.instructor h6{
+    align-items: center;
+    font-size: 30px;
+    margin-left: 85%;
+    font-family: Garamond;
+    font-weight: bold;
+}
+
+.team{
+    position:relative;
+    overflow: hidden;
+    border-radius: 5px;
+    font-family: Garamond;
+    margin-left: 5%;
+    
+}
+
+.team .info .heading{
+    font-size: 28px;
+    margin-right: 0;
+    margin-left: 55%;
+}
+
+.team .info .small{
+    font-size: 14px;
+    margin-left: 5%;
+    
+}
+
+.team .info .paragraph{
+    
+    margin-left: 55%;
+    
+}
+
+
+mat-action-row .list-unstyled {
+    padding-left: 20px;
+    list-style: none;
+}
+mat-action-row .list-inline-item{
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa {
+    
+    font-size: 15px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 30px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-instagram {
+    background:  linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    color: white;
+  }
+
+
+
+mat-expansion-panel{
+width:104%;
+
+  }
+
+  mat-expansion-panel-header{
+      font-family: Garamond;
+     font-size: 20px;
+    margin-right: 16px;
+  }
+
+  .mat-content{
+      margin: 0;
+      margin-right: 10%;
+  }
+
+  mat-panel-title{
+      margin-top: 10px;
+      font-size: 22px;
+      font-weight: bold;
+  }
+
+  
+
+  mat-expansion-panel img{
+    height: 40px;
+    width: 55px;
+    
+    margin-right: 10px;
+}
+
+mat-panel-description{
+    font-family: Garamond;
+    font-size: 20px;
+}
+  
+  mat-expansion-panel p{
+      font-family: Garamond;
+      font-size: 17px;
+     
+  }
+
+  .mat-action-row {
+    border-top-style:unset;
+    
+    display: flex;
+    flex-direction: row;
+  justify-content:space-between;
+    padding: 5px 8px 16px 24px;
+}
+
+ 
+.instructor .row{
+margin-left: 50px;
+}
+.instructor h6{
+    
+    font-family: Garamond;
+    font-weight: bold;
+    margin-left:40%;
+    margin-top: 20px;
+}
+
+.services{
+    background: linear-gradient(319deg, #cdedfd 0%, #ffec82 37%, #ffcfd2 100%);
+    width:100%;
+}
+
+.services .row{
+    font-family: Garamond;
+    font-size: 25px;
+    font-weight: bold;
+    color:black;
+    margin-left: 15%;
+}
+
+.services a{
+    font-size: 15px;
+    font-family: Garamond;
+    color:black;
+    text-align: center;
+    margin-left: 15px;
+    font-weight: 100;
+    margin-top: 10px;
+    
+   
+}
+
+.services a:hover{
+    background-color:#a38155;
+}
+
+h4{
+    font-family: Garamond;
+    font-size: 25px;
+    font-weight: bold;
+    color:white;
+}
+
+.exams{
+    background-color: rgb(236, 232, 226);
+}
+.contact a{
+    font-size: medium;
+    margin: 0;
+}
+
+.contact h4{
+    color: black;
+}
+
+
+.exams mat-card{
+    width:100%;
+    height: 100%;
+
+}
+
+.exams mat-card-title{
+    font-size: 35px;
+    font-family: Garamond;
+    letter-spacing: 4px;
+}
+
+.exams mat-card-subtitle{
+    font-family: Garamond;
+    font-size: 17px;
+}
+
+.exams a:hover{
+   background-color: blanchedalmond;
+}
+ 
+   

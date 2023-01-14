@@ -1,0 +1,99 @@
+<mat-drawer-container>
+    <mat-drawer mode="side" [opened]="sideBaropen">
+      <app-sidebar></app-sidebar> <!--Drawer Content Sidenav-->
+    </mat-drawer>
+  
+  <mat-drawer-content>
+    <app-navbarafterlogin (toggleSidebarbutton)="sidebartoggler()"></app-navbarafterlogin>
+    <!--provide responsive fixed width of page-->
+  
+ 
+<div class="topcoursecard" >
+    <h3>Popular and Trending Courses</h3>
+    <br>
+    <div class="row">
+      <div class="col-6">
+        <div class="input-group ">
+          <div class="form-outline">
+            <input type="search"  #searchInput class="form-control" (input)="serachData(searchInput.value)" [(ngModel)]="clear" placeholder="Search Your Course Here"/>
+          </div>
+          <button type="button" class="btn btn-danger" style="width: 7;" (click)="clearSearch()">
+              <i class="fas fa-times"></i></button>
+        
+      </div>
+      </div>
+      <div class="col-6">
+        <button type="button btnsearch" class="btn " style=" font-size:large; align-items: center; margin-left: 17%;width: 18%;font-family: Garamond; border-radius: 5px; background-color: white; color: rgb(20, 32, 32);">Search</button>
+    
+      </div>
+    </div>
+    
+    
+    <div class="row" >
+      <div class="col-md-3" *ngFor="let topc of topcdata">
+          <div class="card" style="margin-top: 10px; margin-left: 10px; margin-bottom: 10px;">
+              <div class="inner">
+                <img src="{{topc.imageUrl}}" class="card-img-top" alt="..." >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">{{topc.title}} </h5>
+                <h2> {{topc.price | currency:'INR'}}<span><a href="#" [routerLink]="['/coursedetails',topc.id]" class="btn" style="margin-left: 22px; border-radius: 0.5rem; font-family: Garamond; margin-bottom: 0;background-color: #2c3344; color: white;">Start Now</a></span></h2>
+              </div>
+            </div>
+      </div>
+      </div>
+    
+  
+</div>
+
+
+<!-- <div class="topcoursecard" >
+  <h3>Popular and Trending Courses</h3>
+  <br>
+  <div class="row">
+    <div class="col-6">
+      <div class="input-group ">
+        <div class="form-outline">
+          <input type="search"  #searchInput class="form-control" (input)="serachData(searchInput.value)" [(ngModel)]="clear" placeholder="Search Your Course Here"/>
+        </div>
+        <button type="button" class="btn btn-danger" style="width: 7;" (click)="clearSearch()">
+            <i class="fas fa-times"></i></button>
+           
+            
+
+    </div>
+    </div>
+    <div class="col-6">
+      <button type="button btnsearch" class="btn " style="align-items: center; margin-left: 17%;width: 18%;font-family: Garamond; border-radius: 5px; background-color: rgb(20, 32, 32); color: white;">Search</button>
+      <button (click)="this.getCoursesfb();" class="btn btn-primary" style="margin-left: 8px; font-family: Garamond;">Show Courses</button>
+    </div>
+   
+  </div>
+  
+  
+  <div class="row mt-2" >
+    <div class="col-md-4" *ngFor="let topc of coursedata">
+        <div class="card" style="margin-top: 10px; margin-left: 10px; margin-bottom: 10px;">
+            <div class="inner">
+              <img src="{{topc.imageUrl}}" class="card-img-top" alt="..." >
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{topc.title}} </h5>
+              <h2> {{topc.price | currency:'INR'}}<span><a href="#" [routerLink]="['/coursedetails',topc.courseId]" class="btn" style="margin-left: 62px; border-radius: 0.5rem; font-family: Garamond; margin-bottom: 0;background-color: #2c3344; color: white;">Show Details</a></span></h2>
+              <p class="options">
+                <a href="#" routerLink="/update-course/{{topc.courseId}}" >Update</a>    |
+                <a href="#" routerLink="">Delete</a>
+            </p>
+            </div>
+          </div>
+    </div>
+    </div>
+  
+
+</div>
+ -->
+
+
+  </mat-drawer-content>
+  
+  </mat-drawer-container>

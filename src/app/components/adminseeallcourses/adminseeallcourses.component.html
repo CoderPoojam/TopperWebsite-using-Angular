@@ -1,0 +1,49 @@
+
+<mat-drawer-container>
+    <mat-drawer mode="side" [opened]="sideBaropen">
+     <app-adminsidebar></app-adminsidebar> 
+    </mat-drawer>
+  
+  <mat-drawer-content>
+    <app-navbarlogout (toggleSidebarbutton)="sidebartoggler()"></app-navbarlogout>
+    <div class="coursesall">
+        <div *ngIf="fetching" class="text-center spinningtext">
+            <div class="spinner-border text-light" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div> Fetching Courses...
+        </div>
+        <div class="row" *ngIf="!fetching">
+          <div class="col-md-3" *ngFor="let item of topcdata; index as i">
+              <div class="card" style="margin-top: 10px; margin-left: 10px; margin-bottom: 10px;">
+                  <div class="inner">
+                    <img src="{{item.imageUrl}}" class="card-img-top" alt="..." >
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">{{item.title}} </h5>
+                    <!-- <div class="row mt-2">
+                        <div class="col-md-6">
+                            <!-- <a href="#" >Update</a> -->
+                            <!-- <button class="btn" routerLink="/adminupdatecourse" (click)="onUpdateCourse(i)" type="button">Update</button>
+                      
+                        </div>
+                      
+                        <div class="col-md-6">
+                            <!-- <a href="#" >Delete</a> -->
+                            <!-- <button class="btn"  (click)="onDeleteCourse(i)" type="button">Delete</button>
+                        </div>
+                    </div>  --> 
+
+                    <button class="btn"  (click)="onDeleteCourse(i)" type="button">Delete</button>
+                  </div>
+                </div>
+          </div>
+        </div>
+
+        
+      </div>
+   
+
+ 
+  </mat-drawer-content>
+  
+  </mat-drawer-container>

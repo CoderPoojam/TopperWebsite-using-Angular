@@ -1,0 +1,147 @@
+
+.maincontent{
+    height: 80vh;
+    text-align: right;
+    
+}
+
+.mat-slide-toggle{
+    font-family: Garamond;
+    margin: 15px;
+}
+
+.col-2 button{
+   
+    font-family: Garamond;
+    width: 150px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(319deg, #cdedfd 0%, #ffec82 37%, #ffcfd2 100%);
+    border-radius: 6px;
+   font-size: 16px;
+   color: black;
+    transition: width 0.10s;
+    margin-right: 22%;
+}
+.col-2 .btn2{
+   
+    font-family: Garamond;
+}
+
+.col-2 button i{
+    width: 30px;
+    display: none;
+}
+
+.col-2 button:hover i{
+    display: block;
+}
+
+.col-2 button:hover{
+    width: 190px;
+    height: 50px;
+    display: inline-flex;
+    margin-top: 3%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+mat-card{
+    background-image: url("../../../assets/bglearn2.jpg");
+    height: 113%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden; 
+}
+.contenthome .row{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4%;
+    width: 98%;
+}
+
+.col-1{
+    position: relative;
+    flex-basis: 53%;
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.col-1 .color-box{
+    right: 0;
+    top: 10;
+    background: linear-gradient(#d2ccc4,#2f4353);
+    border-radius: 25px;
+    height: 170%;
+    width: 85%;
+    transform: translate(90px);
+}
+
+.col-1 .color-box .controller{
+    width: 85%;
+    height: 90%;
+}
+
+.col-2{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 0;
+}
+
+.col-2 h6{
+    font-size: 44px;
+    font-family: Garamond;
+    
+    letter-spacing: 4px;
+}
+
+.col-2 h5{
+    font-size: 32px;
+    font-family: Garamond;
+    letter-spacing: 2px;
+    margin-top: 7%;
+    line-height: 33px;
+}
+
+.contentfooter{
+    font-family: Garamond;
+}
+.contentfooter .row{
+    margin-top: 6.8%;
+    width: 98%;
+}
+
+.contentfooter h2{
+    margin-right: 18%;
+    font-size: 27px;
+    font-family: Garamond;
+font-weight: 510;
+    letter-spacing:0.5px;
+}
+
+
+.contentfooter h3{
+  margin-right: 18%;
+    font-family: Garamond;
+    font-size: 21px;
+}
+
+.contentfooter .secondrow{
+    margin-right: 22%;
+    font-size: 27px;
+    font-family: Garamond;
+
+}
+
+.contentfooter .thirdrow{
+    margin-right: 32%;
+    font-size: 27px;
+    font-family: Garamond;
+
+}

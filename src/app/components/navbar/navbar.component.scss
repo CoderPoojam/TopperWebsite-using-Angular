@@ -1,0 +1,59 @@
+mat-toolbar{
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    // background:#2c3344 !important;
+   
+    background: linear-gradient(319deg, #cdedfd 0%, #ffec82 37%, #ffcfd2 100%);
+    font-family: Garamond;
+}
+
+.logo button{
+    border:0;
+    outline: none;
+    background: transparent;
+}
+
+.logo{
+   
+    font-size:300%;
+    font-weight:bold;
+    font-style: italic;
+    margin:0;
+    top: 0;
+  margin-bottom: 10px;
+    color: black;
+    margin-left: 20px;
+}
+
+
+.topperlogo{
+    margin-left: 20px;
+  font-size: 22px;
+  color: white;
+
+}
+
+mat-toolbar-row{
+    height: 67px;
+}
+
+a{
+    margin-left:1%;
+    width: 100px; 
+    color:rgb(7, 5, 5); 
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+a i{
+    margin-right: 13px;
+}
+
+.btns{
+    text-decoration: none;
+
+}
+
+

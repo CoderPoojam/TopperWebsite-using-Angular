@@ -1,0 +1,68 @@
+.jeecourse{
+    background-image: url("../../../assets/bglearn2.jpg");
+ height: 120%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    overflow-x: hidden;
+    
+}
+
+/*.mid{
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: initial;
+}*/
+
+.jeecourse h2{
+   font-size: 350%;
+   line-height: 60px;
+   font-family: Garamond;
+   font-weight: bold;
+   color: rgb(6, 7, 7);
+   margin-top: 13%;
+   letter-spacing: 5px;
+}
+
+.jeecourse h5{
+    font-size: 140%;
+   font-family: Garamond;
+   color: rgb(7, 8, 8);
+   margin-top: 2%;
+   
+
+}
+
+.jeecourse h6{
+    font-size: 140%;
+   font-family: Garamond;
+   color: rgb(7, 8, 8);
+   margin-top: 9%;
+   line-height: 30px;
+
+}
+
+.jeecourse h3{
+    font-size: 140%;
+   font-family: Garamond;
+   color: rgb(7, 8, 8);
+   margin-top: 9%;
+   line-height: 30px;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.jeecourse .chatbutton{
+   
+    margin-top: 4%;
+    padding-bottom: 12px;
+}
+

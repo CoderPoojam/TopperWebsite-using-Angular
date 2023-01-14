@@ -1,0 +1,64 @@
+mat-drawer{
+    width:230px;
+    background-color:#0f172a;
+}
+
+mat-drawer-container{
+    height:100%;
+}
+.adminhome{
+    background-image: url("../../../assets/bglearn2.jpg");
+    height: 91%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden; 
+}
+
+.contenthome .row{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 11%;
+    width: 98%;
+}
+
+.col-1{
+    position: relative;
+    flex-basis: 53%;
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.col-1 .color-box{
+    right: 0;
+    top: 10;
+    background: linear-gradient(#d2ccc4,#2f4353);
+    border-radius: 25px;
+    height: 170%;
+    width: 85%;
+    transform: translate(90px);
+}
+
+.col-1 .color-box .controller{
+    width: 85%;
+    height: 90%;
+}
+
+.col-2{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 0;
+}
+
+.col-2 h6{
+    font-size: 54px;
+    font-family: Garamond;
+    font-weight :bold;
+    letter-spacing: 4px;
+    margin-left: 20px;
+    line-height: 60px;
+}
+
+

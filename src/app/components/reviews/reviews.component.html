@@ -1,0 +1,225 @@
+<mat-drawer-container>
+    <mat-drawer mode="side" [opened]="sideBaropen">
+      <app-sidebar></app-sidebar> <!--Drawer Content Sidenav-->
+    </mat-drawer>
+  
+  <mat-drawer-content>
+    <app-navbarafterlogin (toggleSidebarbutton)="sidebartoggler()"></app-navbarafterlogin>
+    <!--provide responsive fixed width of page-->
+  
+    <div class="reviews">
+        <div class="row">
+            <div class="col-5">
+                <div class="rtgblock">
+                    <h3>Average Rating</h3>
+                    <h2 class="bold pb-7">4.7 <small>/ 5</small></h2>&nbsp;&nbsp;
+                    &nbsp;&nbsp;
+                    <button type="button" class="btn btn-warning btn-sm">
+                        <span class="fa fa-star "></span>
+                    </button>&nbsp;&nbsp;
+                    <button type="button" class="btn btn-warning btn-sm">
+                        <span class="fa fa-star "></span>
+                    </button>&nbsp;&nbsp;
+                    <button type="button" class="btn btn-warning btn-sm">
+                        <span class="fa fa-star "></span>
+                    </button>&nbsp;&nbsp;
+                    <button type="button" class="btn btn-warning btn-sm">
+                        <span class="fa fa-star"></span>
+                    </button>&nbsp;&nbsp;
+                    <button type="button" class="btn btn-default gray btn-sm">
+                        <span class="fa fa-star "></span>
+                    </button>&nbsp;&nbsp;
+                    <br>
+                    <button class="btn feedbackbtn" (click)="openDialog()">Give Your Rating</button>
+                </div>
+            </div>
+    
+            <div class="col-7">
+                <div class="rtgcount">
+                    <h4>Rating Progress</h4>
+    
+                    <!-- <div class="pull-left">
+                        <div class="pull-left" style="width:35px; line-height:1; color: white;">
+                            <div style="height:10px; margin:5px 0; color: white;">5 <span class="fa fa-star "></span></div>
+                        </div>
+                        <div class="pull-left" style="width:370px;">
+                            <div  style="height:9px; margin:8px 0; color: white;">
+                                <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>              
+                            
+                            </div>
+                        </div>
+                        <div class="pull-right" style="margin-left:10px; color: white;">123</div>
+                    </div>
+    
+                    <div class="pull-left">
+                        <div class="pull-left" style="width:35px; line-height:1; color: white;">
+                            <div style="height:10px; margin:5px 0;">4 <span class="fa fa-star "></span></div>
+                        </div>
+                        <div class="pull-left" style="width:370px;">
+                            <div  style="height:9px; margin:8px 0; color: white;">
+                                <mat-progress-bar mode="determinate" value="65"></mat-progress-bar>              
+                            
+                            </div>
+                        </div>
+                        <div class="pull-right" style="margin-left:10px; color: white;">136</div>
+                    </div>
+    
+                    <div class="pull-left">
+                        <div class="pull-left" style="width:35px; line-height:1; color: white;">
+                            <div style="height:10px; margin:5px 0;">3 <span class="fa fa-star "></span></div>
+                        </div>
+                        <div class="pull-left" style="width:370px;">
+                            <div  style="height:9px; margin:8px 0; color: white;">
+                                <mat-progress-bar mode="determinate" value="50"></mat-progress-bar>              
+                            
+                            </div>
+                        </div>
+                        <div class="pull-right" style="margin-left:10px; color: white;">89</div>
+                    </div>
+    
+                    <div class="pull-left">
+                        <div class="pull-left" style="width:35px; line-height:1; color: white;">
+                            <div style="height:10px; margin:5px 0;">2 <span class="fa fa-star "></span></div>
+                        </div>
+                        <div class="pull-left" style="width:370px;">
+                            <div  style="height:9px; margin:8px 0; color: white;">
+                                <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>              
+                            
+                            </div>
+                        </div>
+                        <div class="pull-right" style="margin-left:10px; color: white;">56</div>
+                    </div>
+    
+                    <div class="pull-left">
+                        <div class="pull-left" style="width:35px; line-height:1; color: white;">
+                            <div style="height:10px; margin:5px 0;">1 <span class="fa fa-star "></span></div>
+                        </div>
+                        <div class="pull-left" style="width:370px;">
+                            <div  style="height:9px; margin:8px 0; color: white;">
+                                <mat-progress-bar mode="determinate" value="20"></mat-progress-bar>              
+                            
+                            </div>
+                        </div>
+                        <div class="pull-right" style="margin-left:10px; color: white;">22</div>
+                    </div> -->
+    
+                    <div class="row">
+                        <div class="side">
+                          <div>5 star</div>
+                        </div>
+                        <div class="middle">
+                          <div class="bar-container">
+                            <div class="bar-5"></div>
+                          </div>
+                        </div>
+                        <div class="side right">
+                          <div>150</div>
+                        </div>
+                        <div class="side">
+                          <div>4 star</div>
+                        </div>
+                        <div class="middle">
+                          <div class="bar-container">
+                            <div class="bar-4"></div>
+                          </div>
+                        </div>
+                        <div class="side right">
+                          <div>63</div>
+                        </div>
+                        <div class="side">
+                          <div>3 star</div>
+                        </div>
+                        <div class="middle">
+                          <div class="bar-container">
+                            <div class="bar-3"></div>
+                          </div>
+                        </div>
+                        <div class="side right">
+                          <div>15</div>
+                        </div>
+                        <div class="side">
+                          <div>2 star</div>
+                        </div>
+                        <div class="middle">
+                          <div class="bar-container">
+                            <div class="bar-2"></div>
+                          </div>
+                        </div>
+                        <div class="side right">
+                          <div>6</div>
+                        </div>
+                        <div class="side">
+                          <div>1 star</div>
+                        </div>
+                        <div class="middle">
+                          <div class="bar-container">
+                            <div class="bar-1"></div>
+                          </div>
+                        </div>
+                        <div class="side right">
+                          <div>20</div>
+                        </div>
+                        </div>
+                </div>
+    
+            </div>
+        </div>
+    
+        <div class="feedbacks">
+            <div class="row" style="margin-top: 8%; margin-left: 2%;">
+                    <div class="col">
+                        <mat-card class="feedback1 ml-2">
+                            <mat-card-title-group>
+                              <mat-card-title>Anushka S</mat-card-title>
+                              <mat-card-subtitle>
+                                <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked "></span><span class="fa fa-star "></span> 
+                              </mat-card-subtitle>
+                              <img mat-card-sm-image src="../../assets/female.jpg" >
+                            </mat-card-title-group>
+                            <mat-card-content>
+                               I used this website, firstly I was not sure about this. But it is very easy to
+                               use and so many things are learned from here. You can definitely find
+                               your favaourite course.
+                            </mat-card-content>
+                          </mat-card>
+                    </div>
+                    <div class="col">
+                        <mat-card class="feedback2">
+                            <mat-card-title-group>
+                              <mat-card-title>S Watson</mat-card-title>
+                              <mat-card-subtitle>
+                                <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star"></span><span class="fa fa-star "></span> 
+                              </mat-card-subtitle>
+                              <img mat-card-sm-image src="../../assets/male1.jpg" >
+                            </mat-card-title-group>
+                            <mat-card-content>
+                               Really good app but the downloaded stuff needs strong internet connection to 
+                               access that with videos also. Some small kind of bugs also their pls solve things.
+                               Thank You!
+                            </mat-card-content>
+                          </mat-card>
+                    </div>
+                    <div class="col">
+                        <mat-card class="feedback3 mr-2">
+                            <mat-card-title-group>
+                              <mat-card-title>Selena G</mat-card-title>
+                              <mat-card-subtitle>
+                                <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star "></span><span class="fa fa-star "></span><span class="fa fa-star "></span> 
+                              </mat-card-subtitle>
+                              <img mat-card-sm-image src="../../assets/female.jpg" >
+                            </mat-card-title-group>
+                            <mat-card-content>
+                              GOOD Website, Anyone can handle this easily but improve some other 
+                              functionality and add more courses also thats it.<br>
+                               Thanks
+                            </mat-card-content>
+                          </mat-card>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+ 
+  </mat-drawer-content>
+  
+  </mat-drawer-container>

@@ -1,0 +1,17 @@
+<mat-toolbar ><!--*ngIf="auth.isAuthenticated"-->
+    <mat-toolbar-row class="justify-content-between"><!--add row in that container, flexible content allows items to not used all available space-->
+     <div class="logo">
+        <span>Topper</span>  
+    </div>
+  <div class="row mr-3 ml-auto">
+    <ul class="navbar-nav ul">
+        <li class="nav-item active" routerLinkActive="list-item-active">
+          <a class="btns">
+            <i  class="fa fa-user" aria-hidden="true"></i><span routerLink="/signin">Admin</span>
+          </a> 
+        </li>
+        
+      </ul>
+  </div> 
+    </mat-toolbar-row>
+  </mat-toolbar>

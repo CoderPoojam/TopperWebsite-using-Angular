@@ -1,0 +1,19 @@
+<mat-toolbar>
+    <mat-toolbar-row class="justify-content-between">
+      <div class="logo">
+        <button mat-icon-button (click)="togglebutton()"><mat-icon class="topperlogo">menu</mat-icon></button><span>Topper</span>
+    </div>
+  <div class="row mr-1 ml-auto">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item pointer">
+          <!-- <a (click)="logout()" class="nav-link">
+            <i class="fa fa-sign-out"></i>&nbsp;&nbsp;Logout
+          </a>  -->
+          <p><button routerLink="/firstmainpage" class="btn" style="margin-top: 5px; margin-left: 12px; font-size: 20px;  background-color: none; color: rgb(8, 8, 8);"><mat-icon class="icon-display">home</mat-icon> </button>
+          </p>
+        </li>
+        
+      </ul>
+  </div> 
+    </mat-toolbar-row>
+  </mat-toolbar>

@@ -1,0 +1,74 @@
+<mat-drawer-container>
+    <mat-drawer mode="side" [opened]="sideBaropen">
+      <app-sidebar></app-sidebar> <!--Drawer Content Sidenav-->
+    </mat-drawer>
+  
+  <mat-drawer-content>
+    <app-navbarafterlogin (toggleSidebarbutton)="sidebartoggler()"></app-navbarafterlogin>
+    <!--provide responsive fixed width of page-->
+    <div class="coursedetails"  *ngIf="item">
+        <div class="blackbg">
+            <div class="row">
+                <div class="col">
+                    <h4 class="pt-5">{{item.title}}</h4>
+                    <p>{{item.desc}}</p>
+                    <div class="row">
+                       <div class="col">
+                           <h5>{{item.ratings}} <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked "></span><span class="fa fa-star "></span> Ratings</h5>
+                        </div>
+                       <div class="col"><h2>{{item.studentsno | number}} (Students Learned)</h2></div>
+                       <h3>Created By : {{item.author}}</h3>
+                    </div>
+                   
+                    <div class="row mt-2">
+                        <div class="col-md-4"><button routerLink="/topcourses"  class="btn" style="width: 75%; height: 100%; font-size: 17px; margin-left: 55px;  background-color:rgb(236, 207, 207); color: black;"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></div>
+                     
+                        <div class="col-md-4"><button class="btn" style="width: 75%; height: 100%; font-size: 17px; margin-left: 50px;  background-color:rgb(236, 207, 207); color: black;"><i class="fa fa-heart" aria-hidden="true"></i> WishList</button></div>
+                        <div class="col-md-4"><button class="btn" style="width: 75%; height: 100%; font-size: 17px; margin-left: 30px;  background-color:rgb(236, 207, 207); color: black;"><i class="fa fa-share" aria-hidden="true"></i> Share</button></div>
+                   
+                    </div>
+                    
+                            
+                     </div>
+                <div class="col " style="margin-top: 4%;">
+                    <div class="card">
+                        <img src="{{item.imageUrl}}" >
+                        <div class="card-body">
+                            <button class="btn">Add to Cart</button>
+                            <br><br>
+                            <button class="btn " style="background-color: white; color: black;  border: 1px solid black;">Buy Now</button>
+                            <br><br>
+                            <h6>This Course includes: </h6>
+                            <ul>
+                                <li><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp; 22 hours on-demand video</li>
+                                <li><i class="fa fa-file" aria-hidden="true"></i>&nbsp;&nbsp; 15 Articles</li>
+                                <li><i class="fa fa-universal-access" aria-hidden="true"></i>&nbsp;&nbsp; Full lifetime access</li>
+                                <li><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;&nbsp; Access on mobile and TV</li>
+                                <li><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp;&nbsp; Certificate of completion</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!--<div class="requirements">
+            
+            <mat-expansion-panel >
+                <mat-expansion-panel-header>
+                    <mat-panel-title>Requirements for this Course</mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-action-row>
+                    <h2>Access to a computer with an proper Internet connection.</h2>
+                </mat-action-row>
+               </mat-expansion-panel>
+    
+              
+        </div>-->
+    </div>
+ 
+  </mat-drawer-content>
+  
+  </mat-drawer-container>
+  

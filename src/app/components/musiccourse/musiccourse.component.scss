@@ -1,0 +1,207 @@
+
+
+.courseslistdetails{
+    position: fixed;
+    background-color: rgb(252, 240, 217);
+  }
+  
+  .topcoursecard h3{
+      font-size: 30px;
+      text-align:justify;
+      margin-left: 30%;
+      margin-top: 10px;
+      color: white;
+      font-family: Garamond;
+  }
+  
+  .topcoursecard p{
+      font-size: 20px;
+      text-align:justify;
+      margin-left: 25%;
+      margin-top: 20px;
+      color: white;
+      font-family: Garamond;
+  }
+  
+  .carousel-control-prev
+  {
+   background-color: #f39191;
+   width: 10vh;
+   height: 10vh;
+   border-radius: 50%;
+   top: 35%;
+   transform: translateY(-50%);
+   margin-left: -15%;
+  }
+  
+  .badge{
+      color: black;
+  }
+  
+  .carousel-control-next {
+    background-color: #f39191;
+   width: 10vh;
+   height: 10vh;
+   border-radius: 50%;
+   top: 35%;
+   transform: translateY(-50%);
+   margin-right: 10%;
+  }
+  
+    /*==============================================================================*/
+    .image-grid-container{
+      float: left;
+      width: 50%;
+     
+  }
+  
+  .image-grid-container img{
+    height: 84%;
+    width:100%;
+  }
+  
+  .description-container{
+      min-height: 820px;
+      width: 47%;
+      float: left;
+      padding: 0 0 0 30px;
+      box-sizing: border-box;
+  }
+  
+  .product-info{
+      margin-right: 0;
+      padding: 0 0 10px;
+  }
+  
+  .product-title{
+      color: #282c3f;
+      font-size: 35px;
+     
+      line-height: 1.5;
+      font-family: Garamond;
+      margin-top: 50px;
+      font-weight: bold;
+      margin-right: 2px;
+  }
+  
+  .product-info p{
+    font-size: 19px;
+    font-family: Garamond;
+    margin-right: 10px;
+    line-height: 1.2;
+  }
+  
+  .product-rating{
+      margin-bottom: 12px;
+      display: flex;
+    margin-top: 4%;
+      justify-content: center;
+     font-family: Garamond;
+      align-items: center;
+      width: fit-content;
+      height: 40px;
+      padding: 12px;
+      border: 1px solid #08080a;
+      border-radius: 2px;
+      cursor: pointer;
+      font-size: 22px;
+      font-weight: 500;
+      color: #282c3f;
+  }
+  
+  .checked{
+    color: orange;
+  }
+  
+  .product-rating .index-separator {
+      margin-left: 4px;
+      margin-top: -2px;
+      color: #d4d5d9;
+      width: 1px;
+  }
+  
+  .product-rating .index-ratingcount {
+      margin-left: 8px;
+      font-weight: 400;
+      color: #535766;
+      width: fit-content;
+      font-size: 90%;
+  }
+  
+  .index-ratingcontainer {
+      width: auto;
+      height: 45px;
+      
+  }
+  
+  .categoryauthor{
+    font-family: Garamond;
+    font-size: 20px;
+    margin-left: 5px;
+  }
+  
+  .index{
+          background-position: -171px -28px;
+          width: 24px;
+          height: 24px;
+  
+  }
+  
+  .pricecontainer{
+  
+          color: #696e79;
+          font-size: 14px;
+          margin-top: 14px;
+          margin-bottom: 5px;
+          display: inline-block;
+      
+  }
+  
+  .productprice{
+      
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 1;
+          cursor: pointer;
+          font-family: sans-serif;
+      
+  }
+  
+  .productdiscount{
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: .5px;
+      color: #ff905a;
+  }
+  
+  
+  .btn1{
+  width: 70%;
+  height: 170%;
+  font-size: 20px;
+  font-family: Garamond;
+  color: white;
+  font-weight: 500;
+  background-color: deeppink;
+  border-radius: 5px;
+  border: none;
+  margin-left: 12%;
+  margin-top: 2%;
+  }
+  
+  .btn2{
+    width: 70%;
+    height: 170%;
+    font-size: 20px;
+    font-family: Garamond;
+    color: rgb(19, 2, 2);
+    font-weight: 500;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid;
+    margin-left: 4%;
+    }
+  
+  
+  
+  

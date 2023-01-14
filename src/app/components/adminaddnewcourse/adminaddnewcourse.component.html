@@ -1,0 +1,103 @@
+<mat-drawer-container>
+    <mat-drawer mode="side" [opened]="sideBaropen">
+     <app-adminsidebar></app-adminsidebar> <!--Drawer Content Sidenav-->
+    </mat-drawer>
+  
+  <mat-drawer-content>
+    <app-navbarlogout (toggleSidebarbutton)="sidebartoggler()"></app-navbarlogout>
+    <!--provide responsive fixed width of page-->
+  
+    <div class="addcourses">
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center ">
+          <div class="col-lg-10 col-xl-11 mt-3">
+            <div class="card text-black" style="border-radius: 25px;">
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-10 ">
+                    
+                    <!-- <p class="text-center h1 mx-1 mx-md-4 mt-2" style="font-family:Garamond;">New Course</p>
+               -->
+                    <form>
+                      <div class="row">
+                        <div class="form-group col-md-6">
+                          <label for="id">Course Id</label>
+                          <input type="text" class="form-control mt-2"  placeholder="Enter Course Id" id="id" #id>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="title">Course Name</label>
+                          <input type="text" class="form-control mt-2" id="title"  name="title" placeholder="Enter Course Title" required #title/>
+                          
+                        </div>
+                      </div>
+                      
+              <div class="row mt-4">
+                <div class="form-group col-md-6">
+                  <label for="price">Course Price</label>
+                  <input class="form-control mt-2" id="price" name="price" placeholder="Enter Course price" required #price>
+                </div>
+        
+                <div class="form-group col-md-6">
+                  <label for="ratings">Course Rating</label>
+                  <input class="form-control mt-2" id="ratings"  name="ratings" placeholder="Enter Course ratings" required #ratings>
+                </div>
+        
+              </div>
+                   
+              <div class="row mt-4">
+                <div class="form-group col-md-6">
+                  <label for="studentsno">Course Students</label>
+                  <input class="form-control mt-2" id="studentsno"  name="studentsno" placeholder="Enter Students Count" required #studentsno>
+                </div>
+                        <div class="form-group col-md-6">
+                          <label for="author">Course Author</label>
+                          <input class="form-control mt-2" id="author" name="author" placeholder="Enter Course Author" required #author>
+                        </div>
+              </div>
+              
+              
+                      <div class="form-group mt-4">
+                        <label for="desc">Course Description</label>
+                        <textarea class="form-control mt-2" id="desc"  rows="3" name="desc" placeholder="Enter Course Description" required #desc></textarea>
+                      </div>
+              
+                      <div class="form-group mt-4">
+                        <label for="imageUrl">Course Image</label>
+                        <textarea class="form-control mt-2" id="imageUrl"  rows="3" name="imageUrl" placeholder="Enter ImageUrl" required #imageUrl></textarea>
+                      </div>
+              
+                      <!-- <button class="btn" type="submit" [disabled]="!myForm.valid">Add New Course</button>
+                       -->
+
+                       <div class="row mt-5">
+                         <div class="col-md-4">
+                          <button class="btn addbtn" type="button" (click)="onAddCourse(id,title,price,ratings,studentsno,author,desc,imageUrl)">Add New Course</button>
+                         </div>
+                         <div class="col-md-4">
+                          <button class="btn savebtn" type="button" (click)="onSaveCourse()">Save Course</button>
+                         </div>
+                         <div class="col-md-4">
+                          <button class="btn seebtn" type="button" routerLink="/adminseeallcourses" (click)="onFetchCourses()">See All Courses</button>
+                         </div>
+                       </div>
+                       
+                       
+                      </form>
+                      <!-- (click)="onSaveCourse()"(click)="onFetchCourses()"  -->
+                   
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+ 
+</div>
+    </div>
+ 
+  </mat-drawer-content>
+  
+  </mat-drawer-container>

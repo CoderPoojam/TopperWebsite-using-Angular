@@ -1,0 +1,77 @@
+<mat-drawer-container>
+    <mat-drawer mode="side" [opened]="sideBaropen">
+     <app-adminsidebar></app-adminsidebar> <!--Drawer Content Sidenav-->
+    </mat-drawer>
+  
+  <mat-drawer-content>
+    <app-navbarlogout (toggleSidebarbutton)="sidebartoggler()"></app-navbarlogout>
+    <!--provide responsive fixed width of page-->
+    <!--Graph Area -->
+
+    <div class="graph_area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="user-name">
+              <h2>Welcome, <strong>Pooja</strong></h2>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="value-cards_sec">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="value_card card_1">
+                <p>Students Learned</p>
+                <h3>1,23,450</h3>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="value_card card_2">
+                <p>Total Earnings</p>
+                <h3>Rs.77,653</h3>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="value_card card_3">
+                <p>Total Courses</p>
+                <h3>23,454</h3>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="value_card card_4">
+                <p>Courses Categories</p>
+                <h3>76</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <div class="graph_sec">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="graph_sec_2">
+                <p>Learner Feedback</p>
+                <img class="graph" src="../../../assets/graph-1.png" alt="">
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="graph_sec_2">
+                <p>Year Wise progress</p>
+                <img class="line_graph" src="../../../assets/LineLabel.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+ 
+  </mat-drawer-content>
+  
+  </mat-drawer-container>

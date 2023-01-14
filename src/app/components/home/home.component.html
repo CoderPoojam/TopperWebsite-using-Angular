@@ -1,0 +1,326 @@
+<!-- <mat-toolbar>
+    <mat-toolbar-row class="justify-content-between">
+     <div class="logo">
+        <span>Topper</span>  
+    </div>
+  <div class="row mr-1 ml-auto">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item pointer">
+          <a (click)="logout()" class="nav-link">
+            <i class="fa fa-sign-out"></i>&nbsp;&nbsp;Logout
+          </a> 
+        </li>
+        
+      </ul>
+  </div> 
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <div class="homecontent">
+
+  </div> -->
+
+  
+<mat-drawer-container>
+  <mat-drawer mode="side" [opened]="sideBaropen">
+    <app-sidebar></app-sidebar> <!--Drawer Content Sidenav-->
+  </mat-drawer>
+
+<mat-drawer-content>
+  <app-navbarafterlogin (toggleSidebarbutton)="sidebartoggler()"></app-navbarafterlogin>
+  <div class="content">
+    <div class="mid">
+   
+      <video class="video-fluid" autoplay loop muted>
+         <source class="embed-responsive" src="../../../assets/video2.mp4" type="video/mp4">
+      </video>
+  
+      <div class="heading">
+          <h6>WELCOME TO TOPPER</h6>
+          <h5>Best Online Education Expertise!!</h5>
+              </div>
+  
+      </div>
+
+       <!--Compititive Exams-->
+    <section class="exams container" style="max-height: 100%;">
+      <div class="row">
+          <div class="col pb-4 pt-5">
+            <mat-card>
+                <mat-card-title-group>
+                    <mat-card-title>Ready for <br><span style="font-weight: Bold; line-height: 40px; letter-spacing: 5px;">Competitive Exams</span></mat-card-title>
+                    <mat-card-subtitle>Popular Goals</mat-card-subtitle>
+                </mat-card-title-group>
+                       
+                <mat-card-content>
+                   <div class="container">
+                       <div class="row">
+                           <div class="col"><a  href="#" routerLink="jeecourse" style="color: black; font-weight:500; font-size: 15px;">JEE</a></div>
+                           <div class="col"><a href="#" style="color: black;font-weight: 500; font-size: 15px;">MPSC</a></div>
+                           <div class="col"><a href="#" style="color: black;font-weight: 500; font-size: 15px;">CAT</a></div>
+                           <div class="col"><a href="#" style="color: black;font-weight: 500; font-size: 15px;">UPSC</a></div>
+                       </div>
+                       
+                       <div class="row mt-3">
+                        <div class="col-md-3"><a href="#" style="color: black;font-weight: 500; font-size: 15px;">UGC Exams</a></div>
+                        <div class="col-md-3"><a href="#" style="color: black;font-weight: 500; font-size: 15px;">Bank Exams</a></div>
+                       </div>
+                   </div>
+                  </mat-card-content>
+                  <button class="btn" style="margin-top: 40px; margin-left: 12px; font-size: 20px; background-color: #2c3344; color: white;">Start Learning</button>
+                   
+                    
+                     <img src="../../assets/examlearn.jpg" style="height: 59%; width: 65%; padding-left: 120px;">
+                    
+                   
+            </mat-card>
+          </div>
+
+
+          <div class="col pb-4 pt-5">
+            <mat-card>
+                <mat-card-title-group>
+                    <mat-card-title>Prepare for <br><span style="font-weight: Bold; line-height: 40px; letter-spacing: 5px;">Class 5 to 12th</span></mat-card-title>
+                    <mat-card-subtitle>Popular Boards</mat-card-subtitle>
+                </mat-card-title-group>
+                       
+                <mat-card-content>
+                   <div class="container">
+                       <div class="row">
+                           <div class="col"><a href="#" style="color: black; font-weight:500; font-size: 15px;">CBSE</a></div>
+                           <div class="col"><a href="#" style="color: black;font-weight: 500; font-size: 15px;">State Board</a></div>
+                           <div class="col"><a href="#" style="color: black;font-weight: 500; font-size: 15px;">ICSE</a></div>
+                           <div class="col"><a href="#" style="color: black;font-weight: 500; font-size: 15px;">CISCE</a></div>
+                       </div>
+                       
+                       <div class="row mt-3">
+                        <div class="col-md-3"><a href="#" style="color: black;font-weight: 500; font-size: 15px;">IB</a></div>
+                        <div class="col-md-3"><a href="#" style="color: black;font-weight: 500;font-size: 15px;">CIE</a></div>
+                       </div>
+                   </div>
+                  </mat-card-content>
+                  <button class="btn" style="margin-top: 40px; margin-left: 12px; font-size: 20px; background-color: #2c3344; color: white;">Start Learning</button>
+                   
+                    
+                     <img src="../../assets/examlearn2.jfif" style="height: 59%; width: 65%; padding-left: 120px;">
+                    
+                   
+            </mat-card>
+          </div>
+
+      </div>
+    </section>
+<div class="aboutuspage">
+  <section class="about container pt-5"> <!--provide responsive fixed width of page, section for headers footers dividation purpose-->
+    <div class="row align-items-center container my-2 mx-auto"> <!--mx is margin x(left and right), my is margin y(top and bottom)-->
+        <div class="text col-lg-6 col-md-6 col-12 w-50 pt-1 pb-5"><!--md(medium) for small laptops used-->
+         <h6>Why Choose Us? </h6>
+        <br>
+         <p>It is an online learning destination and 
+             offering high-quality courses from the world’s best universities 
+             and institutions to learners everywhere. We empower online learning in 
+             the classroom and around the globe. Learn more about our online courses 
+             and programs and enroll today.</p><br>
+             
+        </div>
+        <div class="image col-lg-6 col-md-6 col-12 w-50 h-80 pt-3 pb-5">
+        <img class="img-fluid "  src="../../assets/aboutus.jpg">
+        </div>
+    </div>
+ </section>
+</div>
+    
+ <!--Our Services -->
+<section class="servicepage pb-5">
+    
+  <div class="section-padding mb-4 pb-5">
+    <h2 class="pt-5">OUR SERVICES</h2>
+    
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="single-service">
+          <span class="icon"><i class="fa fa-book"></i></span>
+          <div class="content">
+            <h3>Daily Live Classes</h3>
+            <p>Chat with educators, as questions, answer live polls and get your doubs cleared- 
+              all while the class is going on.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="single-service">
+          <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+          <div class="content">
+            <h3>Learn anytime, anywhere</h3>
+            <p>One subscription gets you access to all our 
+              live and recorded classes to wtch from the
+              comfort of any of your devices.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="single-service">
+          <span class="icon"><i class="fa fa-cogs"></i></span>
+          <div class="content">
+            <h3>Practics and revise</h3>
+            <p>Learning isn't just limited to classes with our
+              practice section,, mock tests and lecture notes 
+            shared as PDFs for youur revision.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Featured Courses-->
+<section class="category  pt-4 pb-1">
+  <div class="row align-items-center container my-5 mx-auto">
+      <div class="text pt-5 pb-5">
+       <h6>FEATURES TOPIC BY CATEGORY </h6><br>
+       <br>
+       <div class="row pl-5" >
+          <div class="col " *ngFor="let course of courses">{{course}}</div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col">
+              <a href="#">Python</a><br><span>30,968,392 Students</span>
+          </div>
+
+          <div class="col">
+              <a href="#">Financial Analysis</a><br><span>1,083,547 Students</span>
+          </div>
+          <div class="col">
+              <a href="#">AWS Cetification</a><br><span>4,626,021 Students</span>
+          </div>
+          <div class="col">
+              <a href="#">Photoshop</a><br><span>9,949,744 Students</span>
+          </div>
+
+        </div>
+
+
+        <br>
+        <div class="row">
+          <div class="col">
+              <a href="#">Web Development</a><br><span>9,894,441 Students</span>
+          </div>
+
+          <div class="col">
+              <a href="#">SQL</a><br><span>4,680,787 Students</span>
+          </div>
+          <div class="col">
+              <a href="#">Ethical Hacking</a><br><span>9,555,351 Students</span>
+          </div>
+          <div class="col">
+              <a href="#">Graphic Design</a><br><span>2,931,933 Students</span>
+          </div>
+
+        </div>
+
+        <br>
+        <div class="row">
+          <div class="col">
+              <a href="#">Machine Learning</a><br><span>6,207,772 Students</span>
+          </div>
+
+          <div class="col">
+              <a href="#">PMP</a><br><span>1,429,648 Students</span>
+          </div>
+          <div class="col">
+              <a href="#">Cyber Security</a><br><span>3,403,590 Students</span>
+          </div>
+          <div class="col">
+              <a href="#">Drawing</a><br><span>2,245,370 Students</span>
+          </div>
+
+        </div>
+       
+      </div>
+  </div>
+</section>
+
+<!--learningapp-->
+<div class="learningpage">
+  <section class="about container pt-5"> <!--provide responsive fixed width of page, section for headers footers dividation purpose-->
+    <div class="row align-items-center container my-2 mx-auto"> <!--mx is margin x(left and right), my is margin y(top and bottom)-->
+        <div class="text col-lg-6 col-md-6 col-12 w-50 pt-1 pb-5"><!--md(medium) for small laptops used-->
+         <h6>Get the learning<br>
+           app
+         </h6>
+        <br>
+         <p>
+           Download lessons and learn anytime, 
+           anywhere with the Toppper app
+         </p>
+             
+        </div>
+        <div class="image col-lg-6 col-md-6 col-12 w-50 h-50 pt-3 pb-5">
+        <img class="img-fluid "  src="../../../assets/learnapp.png">
+        </div>
+    </div>
+ </section>
+</div>
+
+  <!--********************* Last Section of Services ***********************-->
+  <section class="services pt-4 pb-5">
+    <div class="row  mr-1 pt-5">
+        <div class="col mt-1 ">Topper
+            <br><br>
+           <a href="#">About</a><br>
+           <a href="#">Leadership</a><br>
+           <a href="#">Catalog</a><br>
+           <a href="#">Degrees</a><br>
+           <a href="#">Topper plus</a><br>
+           <a href="#">For Campus</a><br>
+           <a href="#">What we offer</a>
+
+        </div>
+        <div class="col">Popular Goals
+            <br><br>
+           <a href="#">Free Courses</a><br>
+           <a href="#">JEE Main</a><br>
+           <a href="#">CAT Exam</a><br>
+           <a href="#">Android D</a><br>
+           <a href="#">Web Design</a><br>
+           <a href="#">Artificial I</a><br>
+           <a href="#">Communication S</a>
+        </div>
+
+
+        <div class="col">Other Links
+            <br><br>
+           <a href="#">Investors</a><br>
+           <a href="#">Terms</a><br>
+           <a href="#">Privacy</a><br>
+           <a href="#">Help</a><br>
+           <a href="#">Accessibility</a><br>
+           <a href="#">Contact</a><br>
+           <a href="#">Articles</a>
+        </div>
+
+
+        <div class="col">Social Link
+            <br><br>
+            <a href="#" style="margin-left: 0;"><img src="../../../assets/googleplay.png" style="height: 50px; width: 150px; margin-right: 10px;"></a>
+
+            <br><br>
+            <!--<a style="margin-left: 0;"><img src="../../assets/appstore.png" style="height: 50px; width: 150px;"></a>
+            -->
+            <br>
+            <div class="contact">
+                <h4>Contact Us</h4>
+                <a href="#">topper123@gmail.com</a>
+            </div>
+            
+        </div>
+    </div>
+ </section>
+  </div>
+</mat-drawer-content>
+
+</mat-drawer-container>
